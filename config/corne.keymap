@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5     &kp N6   &kp N7     &kp N8    &kp N9      &kp N0  &trans
-&trans     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &kp F6   &kp PG_UP  &kp HOME  &kp INSERT  &trans  &trans
-&trans     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11    &kp F12  &kp PG_DN  &kp END   &kp DEL     &trans  &trans
-                           &trans  &trans   &trans     &trans   &trans     &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7     &kp N8     &kp N9     &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+                        &trans  &trans  &trans    &trans    &trans     &trans
             >;
         };
 
@@ -50,19 +50,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LS(TILDE)  &kp EXCL      &kp AT        &kp HASH       &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS  &kp ASTRK   &kp LPAR    &kp RPAR       &trans
-&trans         &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(PIPE)    &kp LEFT   &kp DOWN  &kp UP      &kp RIGHT   &kp LS(COLON)  &kp LS(DQT)
-&trans         &kp LBKT      &kp RBKT      &kp MINUS      &kp EQUAL     &kp BSLH        &trans     &trans    &kp LS(LT)  &kp LS(GT)  &kp LS(QMARK)  &trans
-                                           &trans         &trans        &trans          &trans     &trans    &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET      &kp AMPS       &kp ASTRK             &kp LPAR               &kp RPAR      &trans
+&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS      &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH      &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BSLH)  &kp LS(GRAVE)
+                          &trans    &trans    &trans       &trans         &trans         &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&trans  &trans  &trans  &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &trans        &trans          &trans  &trans  &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans   &trans
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
